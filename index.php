@@ -1,3 +1,9 @@
+<?php
+$fruits = ["Manzana", "Pera","Uva","Sandia"];
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +15,16 @@
 <body>
     <h1>Impresion de textos</h1>
 
-    <?php echo "Hola mundo";?>
+    <?php echo "Hola mundo $fruits[0]";?>
+
+    <script>
+
+        let frutas = JSON.parse('<?= json_encode($fruits); ?>')
+        console.log(frutas)
+
+
+
+    </script>
 
 </body>
 </html>
