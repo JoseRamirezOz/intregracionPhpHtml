@@ -7,7 +7,7 @@
     <title>PHP</title>
 </head>
 <body>
-    <h1>PHP</h1>
+    <h1>PHP METHODS</h1>
 
     <script>
 
@@ -16,12 +16,12 @@
     formData.append('nombre','Mr.Michi')
     formData.append('edad','14')
 
-    fetch("server.php"{
+    fetch("server.php?color=azul rey",{
         body: formData,
         method: "POST"
     })
     .then(res => res.text())
-    .them(data => {
+    .then(data => {
         console.log(data)
     })
 
