@@ -7,7 +7,14 @@ $usuarios = [
     "Sandler"
 ];  
   
+
+$fruits = ["Manzana", "Pera","Uva","Sandia"];
 ?>
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -72,6 +79,16 @@ $usuarios = [
         <li><?= $user ?></li>
     <?php endforeach; ?>
 
+    <?php echo "Hola mundo $fruits[0]";?>
+
+    <script>
+
+        let frutas = JSON.parse('<?= json_encode($fruits); ?>')
+        console.log(frutas)
+
+
+
+    </script>
 
 </body>
 </html>
