@@ -1,6 +1,6 @@
 <?php
-var_dump($_POST);
-var_dump($_GET);
 
+$nombre = $_GET["nombre"];
+$edad = $_GET["edad"];
 
-var_dump($_REQUEST);
+echo "Hola $nombre con  $edad  de edad"; 
