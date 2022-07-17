@@ -7,14 +7,16 @@
     <title>Fomulario</title>
 </head>
 <body>
-    <form action="server.php" method="GET">
+    <form action="server.php" method="POST" enctype="multipart/form-data">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre"></input>
 
         <label for="edad">Edad</label>
         <input type="text" name="edad" id="edad"></input>
 
-        
+        <label for="imagen">Imagen</label>
+        <input type="file" name="image" id="imagen"></input>
+
         <button type="submit">Mandar formulario</button>
     </form>
 
