@@ -21,7 +21,7 @@ move_uploaded_file($imgTpm,$updateRuta);
 <img src="<?= $updateRuta?>" alt=""/>
 
 
-<input type="file" multiple name="fotos[]">
+
 
 
 
